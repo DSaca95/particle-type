@@ -12,7 +12,8 @@
         <fieldset>
           <legend>Text Settings</legend>
           <label>Text: <input type="text" id="textInput" /></label>
-          <label>Font Size: <input type="range" id="fontSize" min="20" max="200" value="125" /></label>
+          <label>Font Size: <input type="range" id="fontSize" min="20" max="400" value="175" /></label>
+          <label>Font Weight: <input type="range" id="fontWeight" min="100" max="900" step="10" value="600" /></label>
           <label>Render Mode:
             <select id="renderMode">
               <option value="fill">Fill</option>
@@ -20,16 +21,36 @@
               <option value="negative">Negative</option>
             </select>
           </label>
+          <label>Outline Width:
+            <input type="range" id="outlineWidth" min="1" max="10" value="2">
+          </label>
         </fieldset>
       
         <fieldset>
           <legend>Particle Settings</legend>
-          <label>Density: <input type="range" id="density" min="2" max="20" value="6" /></label>
+          <label>Density: <input type="range" id="density" min="2" max="20" value="2" /></label>
           <label>Opacity: <input type="range" id="opacity" min="0" max="1" step="0.01" value="1" /></label>
           <label>Color Mode:
             <select id="colorMode">
               <option value="rgb">RGB</option>
               <option value="hsl">HSL</option>
+              <option value="random">Random</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset><legend>Shape and Style</legend>
+          <label>Shape:
+            <select id="particleShape">
+              <option value="circle">Circle</option>
+              <option value="square">Square</option>
+              <option value="triangle">Triangle</option>
+            </select>
+          </label>
+          
+          <label>Fill Style:
+            <select id="fillStyle">
+              <option value="fill">Fill</option>
+              <option value="stroke">Stroke</option>
             </select>
           </label>
         </fieldset>
@@ -49,5 +70,6 @@
         <div id="colorPreview" style="width: 100%; height: 40px; border: 1px solid #ccc;"></div>
       </div>
       <canvas id="particleCanvas"></canvas>
+      <div id="debug" style="position:fixed;top:10px;right:10px;color:#fff;font-family:monospace;"></div>
 </body>
 </html>

@@ -3,6 +3,13 @@
     --bg-color: #f3f3f3;
     --accent-color: #7c811;
   }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
   
   body {
     margin: 0;
@@ -66,4 +73,5 @@
     width: calc(100vw - 320px);
     height: 100vh;
     display: block;
+    cursor: none;
   }
