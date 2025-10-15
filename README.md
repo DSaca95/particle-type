@@ -53,6 +53,6 @@ Interactive canvas-based text renderer with dynamic particle generation, custom 
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/particle-text-renderer.git
-cd particle-text-renderer
+git clone https://github.com/DSaca95/particle-type.git
+cd particle-type
 # Open index.html in browser
